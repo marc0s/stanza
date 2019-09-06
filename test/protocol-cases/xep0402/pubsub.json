@@ -1,0 +1,77 @@
+[
+    "iq",
+    {
+        "from": "juliet@capulet.lit/balcony",
+        "type": "set",
+        "id": "pip1",
+        "pubsub": {
+            "publish": {
+                "node": "urn:xmpp:bookmarks:0",
+                "item": {
+                    "id": "theplay@conference.shakespeare.lit",
+                    "content": {
+                        "itemType": "urn:xmpp:bookmarks:0",
+                        "name": "The Play's the Thing",
+                        "autojoin": true,
+                        "nick": "JC"
+                    }
+                }
+            },
+            "publishOptions": {
+                "type": "submit",
+                "fields": [
+                    {
+                        "name": "FORM_TYPE",
+                        "type": "hidden",
+                        "value": "http://jabber.org/protocol/pubsub#publish-options"
+                    },
+                    { "name": "pubsub#persist_items", "value": "true" },
+                    { "name": "pubsub#access_model", "value": "whitelist" }
+                ]
+            }
+        }
+    },
+    {
+        "from": "juliet@capulet.lit/balcony",
+        "type": "set",
+        "id": "pip1",
+        "lang": "",
+        "payloadType": "pubsub",
+        "pubsub": {
+            "publish": {
+                "node": "urn:xmpp:bookmarks:0",
+                "item": {
+                    "id": "theplay@conference.shakespeare.lit",
+                    "content": {
+                        "itemType": "urn:xmpp:bookmarks:0",
+                        "name": "The Play's the Thing",
+                        "autojoin": true,
+                        "nick": "JC"
+                    }
+                }
+            },
+            "publishOptions": {
+                "type": "submit",
+                "fields": [
+                    {
+                        "name": "FORM_TYPE",
+                        "type": "hidden",
+                        "value": "http://jabber.org/protocol/pubsub#publish-options",
+                        "rawValues": ["http://jabber.org/protocol/pubsub#publish-options"]
+                    },
+                    {
+                        "name": "pubsub#persist_items",
+                        "value": "true",
+                        "rawValues": ["true"]
+                    },
+                    {
+                        "name": "pubsub#access_model",
+                        "value": "whitelist",
+                        "rawValues": ["whitelist"]
+                    }
+                ],
+                "instructions": []
+            }
+        }
+    }
+]

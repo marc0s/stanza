@@ -79,6 +79,7 @@ export * from './xep0359';
 export * from './xep0363';
 export * from './xep0380';
 export * from './xep0384';
+export * from './xep0402';
 export * from './xrd';
 
 import RFC3921 from './rfc3921';
@@ -160,6 +161,8 @@ import XEP0359 from './xep0359';
 import XEP0363 from './xep0363';
 import XEP0380 from './xep0380';
 import XEP0384 from './xep0384';
+import XEP0402 from './xep0402';
+
 import XRD from './xrd';
 
 const Protocol: Array<DefinitionOptions | DefinitionOptions[]> = [
@@ -242,6 +245,7 @@ const Protocol: Array<DefinitionOptions | DefinitionOptions[]> = [
     XEP0363,
     XEP0380,
     XEP0384,
+    XEP0402,
     XRD
 ];
 
